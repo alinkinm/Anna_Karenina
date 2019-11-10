@@ -1,0 +1,247 @@
+body {
+    background-color:	#FFFFE0;
+    text-shadow: black 0 0 1px;
+}
+
+button {
+    background-color: bisque;
+    text-shadow: black 0 0 1px;
+}
+
+.header {
+    background-image: url(banner2.jpg);
+    box-shadow: 0 0 10px #f09f9f;
+    text-shadow: black 0 0 4px;
+    height: 220pt;
+}
+
+.header-text1 {
+    font: "URW Chancery L", cursive;
+    padding-top: 40pt;
+    padding-right: 100pt;
+    text-shadow: black 0 0 6px;
+    color: beige;
+}
+
+.header-text2 {
+    font: "URW Chancery L", cursive;
+    padding-top: 5pt;
+    padding-right: 80pt;
+    font-size: 4em;
+    text-shadow: black 0 0 6px;
+    color: rgb(248, 246, 211);
+}
+
+#main-menu {
+    float: none; 
+    text-align: center;
+    margin-top: 4pt;
+    margin-bottom: 6pt;
+}
+
+a {
+    color: #eea6a6;
+    text-shadow: black 0 0 1px;
+}
+
+a:active {
+    color: #f09f9f;
+}
+
+a:visited {
+    color:#eea6a6;
+
+}
+
+a:hover { 
+    color: #f09f9f;
+}
+
+#search {
+    margin-right: 10pt;
+    margin-left: 25pt;
+}
+
+.menu {
+    margin-top: 20pt;
+    margin-right: 460pt;
+    margin-left: 460pt;
+    margin-bottom: 10pt;
+    color: #e09898;
+}
+
+.menu-header {
+    margin-top: 10pt;
+    color: #c27e7e;
+}
+
+.post-author {
+    float: left;
+    width: 280px;
+    overflow: hidden;
+    color: rgba(129, 77, 77, 0.664);
+    background: rgba(233, 191, 179, 0.89);
+    text-shadow: black;
+    text-align: left;
+    padding-right: 5pt;
+    border: 2px double rgb(180, 114, 114);
+    margin-right: 10pt;
+    margin-top: 10pt;
+}
+
+.post-box {
+        margin-left: 300px;
+        overflow: hidden;
+        height: auto;
+        text-align: justify;
+        margin: 20pt;
+        float: left;
+        margin-right: 40pt;
+} 
+
+.post-body {
+        overflow: hidden;
+        height: auto;
+        padding-left: 30pt;
+        padding-right: 30pt;
+        margin-top: 10pt;
+        color: #db9191;
+        padding-top: 5pt;
+        padding-bottom: 6pt;
+        border: 2px double rgb(180, 114, 114);
+        background: rgba(253, 209, 197, 0.178);
+}
+
+.avatar {
+    border-radius: 15%;
+    box-shadow: 0 0 10px black;
+    align-self: center;
+    margin-left: 10pt;
+    margin-right: 18pt;
+    border: 2px outset rgb(180, 114, 114);
+}
+
+.author {
+    background: rgba(128, 89, 89, 0.651);
+    box-shadow: 0 0 10px black;
+    margin-right: 40pt;
+    margin-left: 15pt;
+    text-align: center;
+    border: 2px outset rgb(180, 114, 114);
+}
+
+.status {
+    text-align: center;
+    margin-right: 10pt;
+}
+
+.posts-counter {
+    margin-left: 10pt;
+}
+
+.post-time {
+    padding-left: 20pt;
+    padding-bottom: 1pt;
+    background: rgba(236, 181, 165, 0.733);
+    border: 2px double rgb(180, 114, 114);
+}
+
+.new-post {
+    margin-right: 40pt;
+    margin-left: 40pt;
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    color: #e09898;
+    text-align: center;
+}
+
+.np-title {
+    color: #e09898;
+    padding-bottom: 10pt;
+}
+
+.reply-a {
+    text-align: left;
+}
+
+.about-user {
+    float: left;
+    overflow: hidden;
+    color: rgba(129, 77, 77, 0.664);
+    background: rgba(128, 89, 89, 0.651);
+    text-shadow: black;
+    padding: 5pt;
+    border: 2px double rgb(180, 114, 114);
+    margin: 10pt;
+    padding-left: 20pt;
+    align-items: center;
+    width: 250pt;
+}
+
+.posts-user {
+    overflow: hidden;
+    height: auto;
+    padding-left: 30pt;
+    padding-right: 30pt;
+    margin: 10pt;
+    color: #db9191;
+    padding-top: 63pt;
+    padding-bottom: 63pt;
+    border: 3px double rgb(180, 114, 114);
+
+}
+
+.profile {
+    margin-left: 100pt;
+    width: 900pt;
+    overflow: hidden;
+    height: auto;
+    text-align: justify;
+    margin-top: 15pt;
+    margin-bottom: 5pt;
+    float: left;
+    background: cornsilk;
+    margin-right: 100pt;
+    text-align: center;
+}
+
+.main-page-text {
+    color: #db9191;
+    margin: 20pt;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 40pt;
+    margin-left: 40pt;
+    font-family: "Classica One Regular" cursive;
+    font-style: normal;
+}
+
+.location-list {
+    margin: 5pt;
+    margin-right: 70pt;
+    padding-right: 50pt;
+    margin-left: 80pt;
+}
+
+.location-link {
+    border: 2px double rgb(180, 114, 114);
+    background: cornsilk;
+    margin: 10pt;
+    margin-left: 40pt;
+    padding: 5pt;
+    color: #db9191;
+}
+
+.location-topic {
+    color: #db9191;
+    padding: 5pt;
+    font-size: 20px;
+}
+
+.page-title {
+    color: #db9191;
+    text-shadow: 0 0 3px black;
+    margin-top: 10pt;
+    background: rgba(180, 114, 114, 0.103);
+    padding: 2pt;
+}
