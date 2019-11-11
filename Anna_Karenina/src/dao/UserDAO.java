@@ -19,7 +19,7 @@ public class UserDAO implements DAO<User> {
             if (rs.next()) {
                 return new User(rs.getString("username"),
                         rs.getString("password"), rs.getLong("id"),
-                        rs.getDate("date"), rs.getString("about"));
+                        rs.getDate("date"), rs.getString("about"), rs.getString("photo"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -38,13 +38,29 @@ public class UserDAO implements DAO<User> {
             if (rs.next()) {
                 return new User(rs.getString("username"),
                         rs.getString("password"), rs.getLong("id"),
-                        rs.getDate("date"), rs.getString("about"));
+                        rs.getDate("date"), rs.getString("about"), rs.getString("photo"));
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public boolean usernameExist(String username) {
+        try {
+            Connection connection = dbl.DBConnection.getConnection();
+            PreparedStatement statement = connection.prepareStatement("select * from myuser where username = ?");
+            statement.setString(1, username);
+            ResultSet rs = statement.executeQuery();
+            if (rs.next()) {
+                return true;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     @Override
@@ -56,7 +72,8 @@ public class UserDAO implements DAO<User> {
             List<User> users = new ArrayList<>();
             while (rs.next()) {
                 users.add(new User(rs.getString("username"),
-                        rs.getString("password"), rs.getLong("id"), rs.getDate("date"), rs.getString("about")));
+                        rs.getString("password"), rs.getLong("id"), rs.getDate("date"), rs.getString("about"),
+                        rs.getString("photo")));
             }
             return users;
         } catch (SQLException e) {
@@ -69,11 +86,13 @@ public class UserDAO implements DAO<User> {
     public void save(User x) {
         try {
             Connection connection = dbl.DBConnection.getConnection();
-            PreparedStatement statement = connection.prepareStatement("insert into myuser values (?, ?, nextval('userseq'), ?, ?);");
+            PreparedStatement statement = connection.prepareStatement("insert into myuser values (?, ?, nextval('userseq'), ?, " +
+                    "?, ?);");
             statement.setString(1, x.getUsername());
             statement.setString(2, x.getPassword());
             statement.setDate(3, new Date(x.getDate().getTime()));
             statement.setString(4, x.getAbout());
+            statement.setString(5, x.getPhoto());
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();

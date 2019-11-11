@@ -36,6 +36,9 @@ public class LoginServlet extends HttpServlet {
         }
         HttpSession session = request.getSession(true);
         session.setAttribute("currentSessionUser", user);
+        session.setAttribute("username", username);
+        assert user != null;
+        session.setAttribute("photo", user.getPhoto());
         response.sendRedirect("profile.jsp");
 
     }

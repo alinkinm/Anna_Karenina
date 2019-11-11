@@ -1,11 +1,7 @@
-<%@ page language="java"
-         contentType="text/html; charset=windows-1256"
-         pageEncoding="windows-1256"
-         import="models.User"
-%>
+<%@ page import="models.User" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+
 
 <html>
 
@@ -16,7 +12,7 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="jquery/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <title>??????? ???? "???? ????????"</title>
+    <title>Ролевая игра "Анна Каренина"</title>
     <link rel="shortcut icon" href="icon.ico.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
@@ -26,9 +22,7 @@
 <body>
 
 <div style="text-align: center;">
-    <% User currentUser = (User) (session.getAttribute("currentSessionUser")); %>
 
-    Welcome <%= currentUser.getUsername() + " " %>
 </div>
 <script>
     /* When the user clicks on the button,
@@ -53,29 +47,29 @@
 </script>
 <div class="header">
     <h1 align="right" class="header-text1">
-        ??????? ????
+        Ролевая игра
     </h1>
     <h1 align="right" class="header-text2">
-        "???? ????????"
+        "Анная Каренина"
     </h1>
 </div>
 
 <div>
     <ul id="main-menu" class="nav nav-tabs" align="center">
         <li class="nav-item nav-fill">
-            <a class="nav-link" href="#">??? ???????</a>
+            <a class="nav-link" href="#">Мой профиль</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" onclick="myFunction(); return false" role="button">????</a>
+            <a class="nav-link dropdown-toggle" href="#" onclick="myFunction(); return false" role="button">Игра</a>
             <div class="dropdown-menu" id="myDropdown">
-                <a class="dropdown-item" href="#">?????</a>
-                <a class="dropdown-item" href="#">???????</a>
-                <a class="dropdown-item" href="#">?????? ??????????</a>
-                <a class="dropdown-item" href="#">???????? ?????????</a>
+                <a class="dropdown-item" href="#">Сюжет</a>
+                <a class="dropdown-item" href="#">Локации</a>
+                <a class="dropdown-item" href="#">Список персонажей</a>
+                <a class="dropdown-item" href="${pageContext.request.contextPath}/createhero">Создание персонажа</a>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">???????</a>
+            <a class="nav-link" href="#">Правила</a>
         </li>
         <li>
             <form class="form-inline my-2 my-lg-0">
@@ -87,19 +81,19 @@
 </div>
 
 <div class="page-title" align="center">
-    <h3>??? ???????</h3>
+    <h3>Мой профиль</h3>
 </div>
 
 <div class="profile" align="center">
     <div class="about-user" alin="center">
-        <p><div class="author"><a href="#">??????????</a></div></p>
-        <p><div class="status">? ?? ???? ?????? ?????? ? ??? ?????</div></p>
-        <p><img src="???.png" width="180" height="180" class="avatar" align="center"></p>
+        <p><div class="author"><a href="#"><%= session.getAttribute("username") %></a></div></p>
+        <!--<p><div class="status">я не хочу ничего решать я жду поезд</div></p>-->
+        <p><img src="<%= session.getAttribute("photo") %>" width="180" height="180" class="avatar" align="center" alt="ыыы"></p>
     </div>
     <div class="posts-user">
-        <p><div class="posts-counter">???????? ??????: 249</div></p>
-        <p><a href="#">??? ????????? ????</a></p>
-        <p><a href="#">??? ?????????</a></p>
+        <p><div class="posts-counter">Написано постов: 249</div></p>
+        <p><a href="#">Мой последний пост</a></p>
+        <p><a href="${pageContext.request.contextPath}/myheroes">Мои персонажи</a></p>
     </div>
 </div>
 
