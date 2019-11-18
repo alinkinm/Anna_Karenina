@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.16">
     <root id="1">
       <ServerVersion>11.5</ServerVersion>
-      <StartupTime>1573457144</StartupTime>
+      <StartupTime>1574095170</StartupTime>
     </root>
     <database id="2" parent="1" name="anna">
       <ObjectId>41019</ObjectId>
@@ -12,7 +12,7 @@
     <database id="3" parent="1" name="anna_karenina">
       <ObjectId>41072</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>988</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3143</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="4" parent="1" name="forpictures">
@@ -23,40 +23,44 @@
       <ObjectId>24632</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <database id="6" parent="1" name="postgres">
+    <database id="6" parent="1" name="messenger">
+      <ObjectId>57540</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="7" parent="1" name="postgres">
       <ObjectId>13130</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
     </database>
-    <database id="7" parent="1" name="superdb">
+    <database id="8" parent="1" name="superdb">
       <ObjectId>16420</ObjectId>
       <Owner>postgres</Owner>
     </database>
-    <role id="8" parent="1" name="pg_execute_server_program">
+    <role id="9" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_monitor">
+    <role id="10" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
     </role>
-    <role id="10" parent="1" name="pg_read_all_settings">
+    <role id="11" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="11" parent="1" name="pg_read_all_stats">
+    <role id="12" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_read_server_files">
+    <role id="13" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="13" parent="1" name="pg_signal_backend">
+    <role id="14" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="14" parent="1" name="pg_stat_scan_tables">
+    <role id="15" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="15" parent="1" name="pg_write_server_files">
+    <role id="16" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
     </role>
-    <role id="16" parent="1" name="postgres">
+    <role id="17" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateRole>1</CreateRole>
@@ -65,26 +69,26 @@
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
     </role>
-    <schema id="17" parent="3" name="information_schema">
+    <schema id="18" parent="3" name="information_schema">
       <ObjectId>12834</ObjectId>
       <StateNumber>365</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="18" parent="3" name="pg_catalog">
+    <schema id="19" parent="3" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
       <StateNumber>358</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="19" parent="3" name="public">
+    <schema id="20" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <StateNumber>359</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>989</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3144</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
-    <access-method id="20" parent="3" name="btree">
+    <access-method id="21" parent="3" name="btree">
       <ObjectId>403</ObjectId>
       <Comment>b-tree index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -92,7 +96,7 @@
       <HandlerId>330</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="21" parent="3" name="hash">
+    <access-method id="22" parent="3" name="hash">
       <ObjectId>405</ObjectId>
       <Comment>hash index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -100,7 +104,7 @@
       <HandlerId>331</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="22" parent="3" name="gist">
+    <access-method id="23" parent="3" name="gist">
       <ObjectId>783</ObjectId>
       <Comment>GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -108,7 +112,7 @@
       <HandlerId>332</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="23" parent="3" name="gin">
+    <access-method id="24" parent="3" name="gin">
       <ObjectId>2742</ObjectId>
       <Comment>GIN index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -116,7 +120,7 @@
       <HandlerId>333</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="24" parent="3" name="spgist">
+    <access-method id="25" parent="3" name="spgist">
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -124,7 +128,7 @@
       <HandlerId>334</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="25" parent="3" name="brin">
+    <access-method id="26" parent="3" name="brin">
       <ObjectId>3580</ObjectId>
       <Comment>block range index (BRIN) access method</Comment>
       <StateNumber>1</StateNumber>
@@ -132,7 +136,7 @@
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <extension id="26" parent="3" name="plpgsql">
+    <extension id="27" parent="3" name="plpgsql">
       <ObjectId>13116</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>518</StateNumber>
@@ -140,7 +144,7 @@
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <sequence id="27" parent="19" name="heroseq">
+    <sequence id="28" parent="20" name="heroseq">
       <ObjectId>49355</ObjectId>
       <StateNumber>907</StateNumber>
       <Owner>postgres</Owner>
@@ -148,7 +152,7 @@
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="28" parent="19" name="locationseq">
+    <sequence id="29" parent="20" name="locationseq">
       <ObjectId>57535</ObjectId>
       <StateNumber>912</StateNumber>
       <Owner>postgres</Owner>
@@ -156,7 +160,7 @@
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="29" parent="19" name="postseq">
+    <sequence id="30" parent="20" name="postseq">
       <ObjectId>41178</ObjectId>
       <StateNumber>881</StateNumber>
       <Owner>postgres</Owner>
@@ -164,7 +168,7 @@
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="30" parent="19" name="userseq">
+    <sequence id="31" parent="20" name="userseq">
       <ObjectId>41169</ObjectId>
       <StateNumber>867</StateNumber>
       <Owner>postgres</Owner>
@@ -172,219 +176,219 @@
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <table id="31" parent="19" name="hero">
+    <table id="32" parent="20" name="hero">
       <ObjectId>49350</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>904</StateNumber>
     </table>
-    <table id="32" parent="19" name="location">
+    <table id="33" parent="20" name="location">
       <ObjectId>41146</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>830</StateNumber>
     </table>
-    <table id="33" parent="19" name="myuser">
+    <table id="34" parent="20" name="myuser">
       <ObjectId>41127</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>962</StateNumber>
     </table>
-    <table id="34" parent="19" name="post">
+    <table id="35" parent="20" name="post">
       <ObjectId>41138</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>894</StateNumber>
     </table>
-    <table id="35" parent="19" name="userhero">
+    <table id="36" parent="20" name="userhero">
       <ObjectId>57537</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>987</StateNumber>
     </table>
-    <column id="36" parent="31" name="id">
+    <column id="37" parent="32" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>904</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="37" parent="31" name="userid">
+    <column id="38" parent="32" name="userid">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <StateNumber>904</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="38" parent="31" name="firstname">
+    <column id="39" parent="32" name="firstname">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <StateNumber>904</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="39" parent="31" name="photo">
+    <column id="40" parent="32" name="photo">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>904</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="40" parent="31" name="description">
+    <column id="41" parent="32" name="description">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <StateNumber>904</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="41" parent="31" name="hero_pkey">
+    <index id="42" parent="32" name="hero_pkey">
       <ObjectId>49353</ObjectId>
       <StateNumber>904</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="42" parent="31" name="hero_pkey">
+    <key id="43" parent="32" name="hero_pkey">
       <ObjectId>49354</ObjectId>
       <StateNumber>904</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>hero_pkey</UnderlyingIndexName>
     </key>
-    <column id="43" parent="32" name="id">
+    <column id="44" parent="33" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>830</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="44" parent="32" name="title">
+    <column id="45" parent="33" name="title">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <StateNumber>830</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="32" name="picture">
+    <column id="46" parent="33" name="picture">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>830</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="46" parent="32" name="mainpostid">
+    <column id="47" parent="33" name="mainpostid">
       <Position>4</Position>
       <DataType>bigint|0s</DataType>
       <StateNumber>830</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="47" parent="32" name="location_pkey">
+    <index id="48" parent="33" name="location_pkey">
       <ObjectId>41149</ObjectId>
       <StateNumber>830</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="48" parent="32" name="location_pkey">
+    <key id="49" parent="33" name="location_pkey">
       <ObjectId>41150</ObjectId>
       <StateNumber>830</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>location_pkey</UnderlyingIndexName>
     </key>
-    <column id="49" parent="33" name="username">
+    <column id="50" parent="34" name="username">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <StateNumber>819</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="50" parent="33" name="password">
+    <column id="51" parent="34" name="password">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <StateNumber>819</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="51" parent="33" name="id">
+    <column id="52" parent="34" name="id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>824</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="52" parent="33" name="date">
+    <column id="53" parent="34" name="date">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <StateNumber>860</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="53" parent="33" name="about">
+    <column id="54" parent="34" name="about">
       <Position>7</Position>
       <DataType>varchar(100)|0s</DataType>
       <StateNumber>848</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="54" parent="33" name="photo">
+    <column id="55" parent="34" name="photo">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>962</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="55" parent="33" name="myuser_pkey">
+    <index id="56" parent="34" name="myuser_pkey">
       <ObjectId>41136</ObjectId>
       <StateNumber>860</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="56" parent="33" name="myuser_pkey">
+    <key id="57" parent="34" name="myuser_pkey">
       <ObjectId>41137</ObjectId>
       <StateNumber>824</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>myuser_pkey</UnderlyingIndexName>
     </key>
-    <column id="57" parent="34" name="id">
+    <column id="58" parent="35" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>827</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="58" parent="34" name="authorid">
+    <column id="59" parent="35" name="authorid">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>827</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="59" parent="34" name="content">
+    <column id="60" parent="35" name="content">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>827</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="60" parent="34" name="date">
+    <column id="61" parent="35" name="date">
       <Position>4</Position>
       <DataType>varchar|0s</DataType>
       <StateNumber>894</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="61" parent="34" name="locationid">
+    <column id="62" parent="35" name="locationid">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
       <StateNumber>827</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="62" parent="34" name="post_pkey">
+    <index id="63" parent="35" name="post_pkey">
       <ObjectId>41144</ObjectId>
       <StateNumber>894</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="63" parent="34" name="post_pkey">
+    <key id="64" parent="35" name="post_pkey">
       <ObjectId>41145</ObjectId>
       <StateNumber>827</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>post_pkey</UnderlyingIndexName>
     </key>
-    <column id="64" parent="35" name="user_id">
+    <column id="65" parent="36" name="user_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <StateNumber>987</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="65" parent="35" name="hero_id">
+    <column id="66" parent="36" name="hero_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <StateNumber>987</StateNumber>
