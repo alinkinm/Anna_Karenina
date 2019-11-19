@@ -50,7 +50,7 @@
         Ролевая игра
     </h1>
     <h1 align="right" class="header-text2">
-        "Анная Каренина"
+        "Анна Каренина"
     </h1>
 </div>
 
@@ -88,7 +88,7 @@
     <div class="about-user" alin="center">
         <p><div class="author"><a href="#"><%= session.getAttribute("username") %></a></div></p>
         <!--<p><div class="status">я не хочу ничего решать я жду поезд</div></p>-->
-        <p><img src="/home/alina/<%=session.getAttribute("photo")%>" width="180" height="180" class="avatar" align="center" alt="ыыы"></p>
+        <p><img src="<%=session.getAttribute("photo")%>" width="180" height="180" class="avatar" align="center" alt="ыыы"></p>
     </div>
     <div class="posts-user">
         <p><div class="posts-counter">Написано постов: 249</div></p>

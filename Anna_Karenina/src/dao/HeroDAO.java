@@ -80,4 +80,24 @@ public class HeroDAO implements DAO<Hero> {
             e.printStackTrace();
         }
     }
+
+    public ArrayList<Hero> get2(long id) {
+        ArrayList<Hero> heroes = new ArrayList<>();
+        try {
+            Connection connection = dbl.DBConnection.getConnection();
+            PreparedStatement stmt = connection.prepareStatement("select * from " +
+                    "hero where userid= ?" + ";");
+            stmt.setLong(1, id);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                heroes.add(new Hero(rs.getLong("id"),
+                        rs.getLong("userid"), rs.getString("firstname"),
+                        rs.getString("photo"), rs.getString("description")));
+            }
+            return heroes;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

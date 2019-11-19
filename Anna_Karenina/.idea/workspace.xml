@@ -6,15 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f886f4f3-a63d-4ac8-aa58-4aa1b7b1d9b1" name="Default Changelist" comment="some servlets added">
+    <list default="true" id="f886f4f3-a63d-4ac8-aa58-4aa1b7b1d9b1" name="Default Changelist" comment="working registration servlet with almost working file uploading">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/815bc386-a572-46ee-ba29-5e2c2b1dd59e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/815bc386-a572-46ee-ba29-5e2c2b1dd59e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/815bc386-a572-46ee-ba29-5e2c2b1dd59e/storage_v2/_src_/database/anna_karenina.9uwdfA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/815bc386-a572-46ee-ba29-5e2c2b1dd59e/storage_v2/_src_/database/anna_karenina.9uwdfA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anna_Karenina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Anna_Karenina.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Anna_Karenina/servlets/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/servlets/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Anna_Karenina/servlets/RegistrationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/HeroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/HeroDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,20 +121,20 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/templates" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/design" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="servlets" />
       <recent name="dbl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/templates" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/design" />
+      <recent name="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,7 +309,10 @@
       <workItem from="1573716331977" duration="915000" />
       <workItem from="1574025423777" duration="846000" />
       <workItem from="1574026335548" duration="917000" />
-      <workItem from="1574103696188" duration="7310000" />
+      <workItem from="1574103696188" duration="7977000" />
+      <workItem from="1574150779757" duration="1876000" />
+      <workItem from="1574161665667" duration="3256000" />
+      <workItem from="1574169201970" duration="4960000" />
     </task>
     <task id="LOCAL-00001" summary="some servlets added">
       <created>1573504141916</created>
@@ -316,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573504141917</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="working registration servlet with almost working file uploading">
+      <created>1574111081711</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574111081712</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,6 +350,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="registration" />
     <MESSAGE value="some servlets added" />
-    <option name="LAST_COMMIT_MESSAGE" value="some servlets added" />
+    <MESSAGE value="working registration servlet with almost working file uploading" />
+    <option name="LAST_COMMIT_MESSAGE" value="working registration servlet with almost working file uploading" />
   </component>
 </project>
