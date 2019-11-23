@@ -48,7 +48,65 @@
         <url-pattern>/createhero</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>servlets.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/profile</url-pattern>
 
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <servlet-class>servlets.WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WelcomeServlet</servlet-name>
+        <url-pattern></url-pattern>
+
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateLocationServlet</servlet-name>
+        <servlet-class>servlets.CreateLocationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateLocationServlet</servlet-name>
+        <url-pattern>/createLocation</url-pattern>
+
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LocationsServlet</servlet-name>
+        <servlet-class>servlets.LocationsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LocationsServlet</servlet-name>
+        <url-pattern>/locations</url-pattern>
+
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LocationPageServlet</servlet-name>
+        <servlet-class>servlets.LocationPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LocationPageServlet</servlet-name>
+        <url-pattern>/locationPage</url-pattern>
+
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NewPostServlet</servlet-name>
+        <servlet-class>servlets.NewPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewPostServlet</servlet-name>
+        <url-pattern>/newPost</url-pattern>
+
+    </servlet-mapping>
 
 <!--    <servlet>-->
 <!--        <servlet-name>freemarker</servlet-name>-->

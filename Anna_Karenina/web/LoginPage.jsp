@@ -51,7 +51,7 @@
 
 <ul id="main-menu" class="nav nav-tabs" align="center">
     <li class="nav-item nav-fill">
-        <a class="nav-link" href="#">Мой профиль</a>
+        <a class="nav-link" href="${pageContext.request.contextPath}/profile">Мой профиль</a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" onclick="myFunction(); return false" role="button">Игра</a>

@@ -95,4 +95,21 @@ public class PostDAO implements DAO<Post> {
             e.printStackTrace();
         }
     }
+
+    public int number(long authorid) {
+        int k = 0;
+        try {
+            Connection connection = dbl.DBConnection.getConnection();
+            PreparedStatement stmt = connection.prepareStatement("select * from " +
+                    "post where authorid=?;");
+            stmt.setLong(1, authorid);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+               k++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return k;
+    }
 }

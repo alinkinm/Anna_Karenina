@@ -40,13 +40,16 @@ public class LoginServlet extends HttpServlet {
         session.setAttribute("username", username);
         assert user != null;
         session.setAttribute("photo", user.getPhoto());
-        response.sendRedirect("profile.jsp");
+        session.setAttribute("about", user.getAbout());
+
+        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/profile.jsp");
+
+        dispatcher.forward(request, response);
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //request.getRequestDispatcher("/test.jsp").forward(request, response);
         RequestDispatcher dispatcher
                 = this.getServletContext().getRequestDispatcher("/LoginPage.jsp");
 

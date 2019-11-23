@@ -20,7 +20,7 @@ public class LocationDAO implements DAO<Location> {
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
                 return new Location(rs.getLong("id"), rs.getString("title"),
-                        rs.getString("picture"), rs.getLong("mainpostid"));
+                        rs.getString("picture"), rs.getString("description"), rs.getString("date"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -37,7 +37,8 @@ public class LocationDAO implements DAO<Location> {
             List<Location> locations = new ArrayList<>();
             while (rs.next()) {
                 locations.add(new Location(rs.getLong("id"), rs.getString("title"),
-                        rs.getString("picture"), rs.getLong("mainpostid")));
+                        rs.getString("picture"), rs.getString("description"),
+                        rs.getString("date")));
             }
             return locations;
         } catch (SQLException e) {
@@ -51,10 +52,11 @@ public class LocationDAO implements DAO<Location> {
         try {
             Connection connection = dbl.DBConnection.getConnection();
             PreparedStatement statement = connection.prepareStatement("insert into location" +
-                    " values (nextval('locationseq'), ?, ?, ?);");
+                    " values (nextval('locationseq'), ?, ?, ?,?);");
             statement.setString(1, x.getTitle());
             statement.setString(2, x.getPicture());
-            statement.setLong(3, x.getMainpostID());
+            statement.setString(3, x.getDesc());
+            statement.setString(4, x.getDate());
             statement.execute();
         } catch (SQLException e) {
             e.printStackTrace();

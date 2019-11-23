@@ -25,6 +25,8 @@ public class RegistrationServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        response.setCharacterEncoding("cp1251");
+        response.setContentType("text/html;charset=cp1251");
 
         String username = request.getParameter("username");
         String name = request.getParameter("firstname");
@@ -36,22 +38,18 @@ public class RegistrationServlet extends HttpServlet {
         UserDAO dao = new UserDAO();
 
         request.getSession().setAttribute("name", name);
-
-        Part filePart = request.getPart("photo");
-        String photo = null;
-
-        if (filePart == null) {
-            response.sendRedirect("null.jsp");
+        Part p = request.getPart("photo");
+        String localdir = "uploads";
+        String pathDir = getServletContext().getRealPath("") + File.separator + localdir;
+        File dir = new File(pathDir);
+        if (!dir.exists()) {
+            dir.mkdir();
         }
-        else {
-            InputStream fileContent = filePart.getInputStream();
-            File uploads = new File("");
-            File file = File.createTempFile("somefilename-", ".png", uploads);
-            try (fileContent) {
-                Files.copy(fileContent, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            }
-            photo = file.getName();
-        }
+
+        String[] filename_data = p.getSubmittedFileName().split("\\.");
+        String filename = Math.random() + "." + filename_data[filename_data.length - 1];
+        String fullpath = pathDir + File.separator + filename;
+        p.write(fullpath);
 
         if (dao.usernameExist(username)) {
             String errorMessage = "такой пользователь уже существует";
@@ -59,44 +57,17 @@ public class RegistrationServlet extends HttpServlet {
 
         } else {
 
-            User user = new User(username, password, (long) 1, date, about, photo);
+            User user = new User(username, password, (long) 1, date, about,
+                    localdir + "/" + filename);
             dao.save(user);
             response.sendRedirect("LoginPage.jsp");
         }
 
-
-       /* Part filePart = request.getPart("photo"); // Retrieves <input type="file" name="file">
-        //String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString(); // MSIE fix.
-        if (filePart == null) {
-            response.sendRedirect("null.jsp");
-        }
-        else {
-            InputStream fileContent = filePart.getInputStream();
-
-            File uploads = new File("uploads");
-
-            File file = File.createTempFile("somefilename-", ".ext", uploads);
-
-            try (fileContent) {
-                Files.copy(fileContent, file.toPath(), StandardCopyOption.REPLACE_EXISTING);
-            }
-            String photo = file.getName();
-
-
-            if (dao.usernameExist(username)) {
-                String errorMessage = "Invalid userName or Password";
-                request.getSession().setAttribute("errorMessage", errorMessage);
-
-            } else {
-
-                User user = new User(username, password, (long) 1, date, photo, about);
-                dao.save(user);
-                response.sendRedirect("LoginPage.jsp");
-            }*/
-        }
+    }
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         request.setCharacterEncoding("cp1251");
         response.setCharacterEncoding("cp1251");
         response.setContentType("text/html;charset=cp1251");
