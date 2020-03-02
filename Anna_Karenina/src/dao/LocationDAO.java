@@ -29,12 +29,12 @@ public class LocationDAO implements DAO<Location> {
     }
 
     @Override
-    public List<Location> getAll() {
+    public ArrayList<Location> getAll() {
         try {
             Connection connection = dbl.DBConnection.getConnection();
             PreparedStatement stmt = connection.prepareStatement("select * from location;");
             ResultSet rs = stmt.executeQuery();
-            List<Location> locations = new ArrayList<>();
+            ArrayList<Location> locations = new ArrayList<>();
             while (rs.next()) {
                 locations.add(new Location(rs.getLong("id"), rs.getString("title"),
                         rs.getString("picture"), rs.getString("description"),

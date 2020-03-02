@@ -1,5 +1,6 @@
 package dao;
 
+import models.Hero;
 import models.User;
 
 import java.sql.*;
@@ -27,13 +28,12 @@ public class UserDAO implements DAO<User> {
         return null;
     }
 
-    public User find(String username, String password) {
+    public User find(String username) {
         try {
             Connection connection = dbl.DBConnection.getConnection();
-            PreparedStatement statement = connection.prepareStatement("select * from myuser where username = ?" +
-                    "and password = ? ");
+            PreparedStatement statement = connection.prepareStatement("select * from myuser where username = ?");
             statement.setString(1, username);
-            statement.setString(2, password);
+
             ResultSet rs = statement.executeQuery();
             if (rs.next()) {
                 return new User(rs.getString("username"),
@@ -86,7 +86,7 @@ public class UserDAO implements DAO<User> {
     public void save(User x) {
         try {
             Connection connection = dbl.DBConnection.getConnection();
-            PreparedStatement statement = connection.prepareStatement("insert into myuser values (?, ?, nextval('userseq'), ?, " +
+            PreparedStatement statement = connection.prepareStatement("insert into public.myuser values (?, ?, nextval('userseq'), ?, " +
                     "?, ?);");
             statement.setString(1, x.getUsername());
             statement.setString(2, x.getPassword());
@@ -103,7 +103,6 @@ public class UserDAO implements DAO<User> {
     public void update(User user, String[] params) {
 
 
-
     }
 
     @Override
@@ -118,3 +117,5 @@ public class UserDAO implements DAO<User> {
         }
     }
 }
+
+

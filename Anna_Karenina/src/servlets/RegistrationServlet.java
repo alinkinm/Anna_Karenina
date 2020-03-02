@@ -1,6 +1,7 @@
 package servlets;
 
 import dao.UserDAO;
+import models.Password;
 import models.User;
 
 import javax.servlet.RequestDispatcher;
@@ -10,14 +11,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
+
 import java.util.Date;
-import java.util.Enumeration;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 @WebServlet(name = "RegistrationServlet")
 @MultipartConfig
@@ -31,6 +26,13 @@ public class RegistrationServlet extends HttpServlet {
         String username = request.getParameter("username");
         String name = request.getParameter("firstname");
         String password = request.getParameter("password");
+
+
+
+
+            String newsuperpass = Password.hashPassword(password);
+
+
         String about = request.getParameter("about");
 
 
@@ -54,13 +56,20 @@ public class RegistrationServlet extends HttpServlet {
         if (dao.usernameExist(username)) {
             String errorMessage = "такой пользователь уже существует";
             request.getSession().setAttribute("errorMessage", errorMessage);
+            response.sendRedirect(request.getRequestURI());
+            //RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/registration");
+            //dispatcher.forward(request, response);
+            //response.sendRedirect("/reg.jsp");
 
         } else {
 
-            User user = new User(username, password, (long) 1, date, about,
+            User user = new User(username, newsuperpass, (long) 1, date, about,
                     localdir + "/" + filename);
             dao.save(user);
-            response.sendRedirect("LoginPage.jsp");
+            RequestDispatcher dispatcher
+                    = this.getServletContext().getRequestDispatcher("/login");
+
+            dispatcher.forward(request, response);
         }
 
     }

@@ -1,6 +1,7 @@
 package servlets;
 
 import dao.UserDAO;
+import models.Password;
 import models.User;
 
 import javax.servlet.RequestDispatcher;
@@ -19,12 +20,24 @@ public class LoginServlet extends HttpServlet {
 
         response.setCharacterEncoding("cp1251");
         response.setContentType("text/html;charset=cp1251");
+
         String username = request.getParameter("un");
         String password = request.getParameter("pw");
-        UserDAO dao = new UserDAO();
-        User user = dao.find(username, password);
 
-        if (user == null) {
+
+        UserDAO dao = new UserDAO();
+        User user = dao.find(username);
+        boolean yuy = false;
+
+        try {
+            yuy = Password.checkPassword(password, user.getPassword());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        if (user == null || !yuy ) {
+
             String errorMessage = "Invalid userName or Password";
 
             request.getSession().setAttribute("errorMessage", errorMessage);
@@ -33,14 +46,26 @@ public class LoginServlet extends HttpServlet {
                     = this.getServletContext().getRequestDispatcher("/LoginPage.jsp");
 
             dispatcher.forward(request, response);
+        } else {
+
+            HttpSession session = request.getSession(true);
+
+            session.setAttribute("currentSessionUser", user);
+
+
+            session.setAttribute("username", username);
+            session.setAttribute("photo", user.getPhoto());
+            session.setAttribute("about", user.getAbout());
+
+            if(request.getParameter("rememberMe").equals("true")) {
+
+
+            }
+
+
         }
 
-        HttpSession session = request.getSession(true);
-        session.setAttribute("currentSessionUser", user);
-        session.setAttribute("username", username);
-        assert user != null;
-        session.setAttribute("photo", user.getPhoto());
-        session.setAttribute("about", user.getAbout());
+
 
         RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/profile.jsp");
 

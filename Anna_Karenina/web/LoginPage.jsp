@@ -89,16 +89,21 @@
             <input type="password" name = "pw" pattern="[a-zA-Z0-9]+" title="Буквы латинского алфавита и цифры" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль">
         </div>
         <% String s1  = (String) session.getAttribute("errorMessage");%>
-        <% if(s1 != null){ %>
+        <% if(s1!=null){ %>
         <div class="besideemailbox" style="color : red">Invalid userName or Password</div>
         <% }%>
         <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <input type="checkbox" name="rememberMe" value="true" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1" align="center">Запомнить меня</label>
         </div>
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="submit" align="center">Войти</button>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" align="center">Регистрация</button>
+
     </form>
+    <form class="menu" action="${pageContext.request.contextPath}/registration" method="get">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="submit">Регистрация</button>
+    </form>
+
+
 </div>
 </body>
 

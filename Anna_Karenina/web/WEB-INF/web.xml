@@ -3,6 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+
+
+
+
+
+
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>servlets.LoginServlet</servlet-class>
@@ -107,6 +114,49 @@
         <url-pattern>/newPost</url-pattern>
 
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AnswerServlet</servlet-name>
+        <servlet-class>servlets.AnswerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AnswerServlet</servlet-name>
+        <url-pattern>/answer</url-pattern>
+
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class>servlets.SetCookiesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/setCookies</url-pattern>
+
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <servlet-class>servlets.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <url-pattern>/getCookies</url-pattern>
+
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+
+    </servlet-mapping>
+
 
 <!--    <servlet>-->
 <!--        <servlet-name>freemarker</servlet-name>-->

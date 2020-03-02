@@ -65,7 +65,7 @@
             <div class="dropdown-menu" id="myDropdown">
                 <a class="dropdown-item" href="#">Сюжет</a>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/locations">Локации</a>
-                <a class="dropdown-item" href="/createLocation">Создать локацию</a>
+                <a class="dropdown-item" href="${pageContext.request.contextPath}/createLocation">Создать локацию</a>
                 <a class="dropdown-item" href="#">Список персонажей</a>
                 <a class="dropdown-item" href="${pageContext.request.contextPath}/createhero">Создание персонажа</a>
             </div>
@@ -94,7 +94,7 @@
     </div>
     <div class="posts-user">
 
-        <p><a href="#"><%=session.getAttribute("about")%></a></p>
+        <p><a href="#">О себе: <%=session.getAttribute("about")%></a></p>
         <p><a href="#">Мой последний пост</a></p>
         <p><a href="${pageContext.request.contextPath}/myheroes">Мои персонажи</a></p>
     </div>

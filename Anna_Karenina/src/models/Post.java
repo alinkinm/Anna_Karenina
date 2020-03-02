@@ -9,13 +9,23 @@ public class Post {
     protected String text;
     protected Date date;
     protected long locationID;
+    protected String heroName;
 
-    public Post(long ID, long authorID, String text, Date date, long locationID) {
+    public Post(long ID, long authorID, String text, Date date, long locationID, String heroName) {
         this.ID = ID;
         this.authorID = authorID;
         this.text = text;
         this.date = date;
         this.locationID = locationID;
+        this.heroName = heroName;
+    }
+
+    public String getHeroName() {
+        return heroName;
+    }
+
+    public void setHeroName(String heroName) {
+        this.heroName = heroName;
     }
 
     public long getID() {
