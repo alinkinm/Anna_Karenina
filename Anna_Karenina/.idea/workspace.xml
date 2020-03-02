@@ -6,48 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f886f4f3-a63d-4ac8-aa58-4aa1b7b1d9b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f886f4f3-a63d-4ac8-aa58-4aa1b7b1d9b1" name="Default Changelist" comment="new">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anna_Karenina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Anna_Karenina.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/LoginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/LoginPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/HeroDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/HeroDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/LocationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/LocationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/PostDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/PostDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dbl/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/dbl/DBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/helpers/FreemarkerHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/helpers/FreemarkerHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/Post.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Anna_Karenina_war_exploded/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/dao/DAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/dao/HeroDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/dao/LocationDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/dao/PostDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/dao/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/dbl/DBConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/helpers/FreemarkerHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/models/Hero.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/models/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/models/Post.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/servlets/LoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Anna_Karenina/servlets/RegistrationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/LocationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/LocationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/PostDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PostDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/LoginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/LoginPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/profile.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -470,7 +430,7 @@
       <workItem from="1582647329453" duration="6928000" />
       <workItem from="1582665224621" duration="3871000" />
       <workItem from="1582699812106" duration="1454000" />
-      <workItem from="1582973023128" duration="45428000" />
+      <workItem from="1582973023128" duration="45938000" />
     </task>
     <task id="LOCAL-00001" summary="some servlets added">
       <created>1573504141916</created>
@@ -500,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574542579511</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new">
+      <created>1583136400489</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583136400490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +492,8 @@
     <MESSAGE value="working registration servlet with almost working file uploading" />
     <MESSAGE value="working servlet for creating a character" />
     <MESSAGE value="almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="58" width="800" height="677" key="#Auto_Import" timestamp="1574447558032">
